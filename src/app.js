@@ -108,7 +108,9 @@ app.get('*',(req,res)=>{
     })
 })
 
+const PORT = process.env.PORT || 3030;
 
- app.listen(3000,()=>{
+
+ app.listen(PORT,()=>{
      console.log('server is starting...')
  })
