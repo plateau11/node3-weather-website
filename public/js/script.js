@@ -34,7 +34,7 @@ weatherForm.addEventListener('submit',(e)=>{
 
         msg1.textContent = 'Loading...'
 
-        fetch('http://weather-site-kuln.onrender.com/weather?address='+search.value+"'").then((response)=>{
+        fetch('http://localhost:10000/weather?address='+search.value+"'").then((response)=>{
     response.json().then((data)=>{
         if(!data.error && !data.error2){
            // console.log(data.temperature)
